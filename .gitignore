@@ -1,0 +1,11 @@
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/upload/resize_cache/
+/bitrix/backup/
+/bitrix/tmp/
+
+*.log
+*.tmp
+
+.env

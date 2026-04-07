@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы — макет (Вариант А: на стилях шаблона)</title>
+    <style>
+        /*
+            Эти стили НЕ НУЖНО переносить в шаблон —
+            они уже есть в шаблоне сайта delement (template_styles.css и colors.css).
+            Здесь они продублированы только для корректного отображения макета.
+        */
+        body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80.01%; margin: 20px auto; max-width: 612px; }
+        h1 { font-family: Arial, Helvetica, sans-serif; font-size: 200%; font-weight: normal; margin: 0 0 1em; color: #000; }
+        a:link, a:visited, a:active { color: #3C72CC; }
+        a:hover { color: #c90000; }
+        div.news-list { margin: 0 0 2em; }
+        div.news-item { margin: 0 0 2em; padding: 0 0 2em; border-bottom: 1px solid #E5E5E5; }
+        div.news-date { margin: 0 0 1em; color: #7F7F7F; }
+        div.news-title { font-size: 1em; margin: 0 0 1em; font-weight: bold; }
+        a.news-detail-link { display: block; margin: 1em 0 0; outline: none; }
+    </style>
+</head>
+<body>
+
+<h1>Отзывы</h1>
+
+<!-- ============================================= -->
+<!-- === СПИСОК ОТЗЫВОВ (news.list)             === -->
+<!-- ============================================= -->
+
+<div class="news-list">
+
+    <!-- Отзыв 1 -->
+    <div class="news-item">
+
+        <div style="float:left; margin:0 15px 10px 0;">
+            <a href="/reviews/1/">
+                <img src="https://i.pravatar.cc/80?img=12" width="80" alt="Сергей Родионов" style="border-radius:50%;" />
+            </a>
+        </div>
+
+        <div class="news-title">
+            <a href="/reviews/1/">Сергей Родионов</a>
+        </div>
+
+        <div class="news-date">
+            12.05.2020, Генеральный директор, CTC-Медиа
+        </div>
+
+        <div style="margin-top:10px;">
+            Вы сможете организовать внутри компании коллективную работу над проектами в рабочих группах, вести учет и планирование времени и событий, обмениваться сообщениями и почтой через портал.
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <a class="news-detail-link" href="/reviews/1/">Подробнее &rarr;</a>
+    </div>
+
+    <!-- Отзыв 2 -->
+    <div class="news-item">
+
+        <div style="float:left; margin:0 15px 10px 0;">
+            <a href="/reviews/2/">
+                <img src="https://i.pravatar.cc/80?img=5" width="80" alt="Анна Андреева" style="border-radius:50%;" />
+            </a>
+        </div>
+
+        <div class="news-title">
+            <a href="/reviews/2/">Анна Андреева</a>
+        </div>
+
+        <div class="news-date">
+            12.05.2020, Маркетолог, RK-Telecom
+        </div>
+
+        <div style="margin-top:10px;">
+            Вы сможете организовать внутри компании коллективную работу над проектами в рабочих группах, вести учет и планирование времени и событий, обмениваться сообщениями и почтой через портал.
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <a class="news-detail-link" href="/reviews/2/">Подробнее &rarr;</a>
+    </div>
+
+    <!-- Отзыв 3 -->
+    <div class="news-item">
+
+        <div style="float:left; margin:0 15px 10px 0;">
+            <a href="/reviews/3/">
+                <img src="https://i.pravatar.cc/80?img=8" width="80" alt="Дмитрий Пялов" style="border-radius:50%;" />
+            </a>
+        </div>
+
+        <div class="news-title">
+            <a href="/reviews/3/">Дмитрий Пялов</a>
+        </div>
+
+        <div class="news-date">
+            12.05.2020, Программист, .NET-dev
+        </div>
+
+        <div style="margin-top:10px;">
+            Можете сразу перейти с «младшей», базовой редакции на «Бизнес-процессы». После такого перехода ваш портал можно будет интегрировать с внешним сайтом, на портале добавятся возможности визуального проектирования бизнес-процессов.
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <a class="news-detail-link" href="/reviews/3/">Подробнее &rarr;</a>
+    </div>
+
+</div>
+
+
+<!-- ============================================= -->
+<!-- === ДЕТАЛЬНАЯ СТРАНИЦА (news.detail)        === -->
+<!-- ============================================= -->
+
+<hr style="margin:40px 0; border:none; border-top:3px double #ccc;" />
+<h2 style="color:#999; font-family:Arial; font-weight:normal;">↓ Детальная страница отзыва ↓</h2>
+
+<div class="news-detail">
+
+    <img
+        src="https://i.pravatar.cc/200?img=12"
+        alt="Сергей Родионов"
+        style="float:left; margin:0 15px 15px 0; max-width:200px; border-radius:4px;"
+    />
+
+    <div class="news-date">
+        12.05.2020, Генеральный директор, CTC-Медиа
+    </div>
+
+    <div style="clear:both;"></div>
+    <hr />
+
+    <div>
+        Вы сможете организовать внутри компании коллективную работу над проектами в рабочих группах, вести учет и планирование времени и событий, обмениваться сообщениями и почтой через портал, проводить внутри компании видеоконференции и делать многое другое.
+        <br /><br />
+        Можете сразу перейти с «младшей», базовой редакции на «Бизнес-процессы». После такого перехода ваш портал можно будет интегрировать с внешним сайтом, на портале добавятся возможности визуального проектирования бизнес-процессов и управления списками, включая списки в рабочих группах. Кроме того, вы сможете анализировать посещаемость своего портала.
+    </div>
+
+</div>
+
+<p><a href="/reviews/">&larr; Вернуться к списку отзывов</a></p>
+
+</body>
+</html>

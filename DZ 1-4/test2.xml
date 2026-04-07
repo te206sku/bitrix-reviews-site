@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<items>
+    <item active="Y">
+        <name>car1</name>
+        <price>121.50</price>
+        <oldPrice>1150</oldPrice>
+    </item>
+    <item active="N">
+        <name>car2</name>
+        <price>122.50</price>
+        <oldPrice>2150</oldPrice>
+    </item>
+    <item active="Y">
+        <name>car3</name>
+        <price>123.50</price>
+        <oldPrice>3150</oldPrice>
+    </item>
+</items>
